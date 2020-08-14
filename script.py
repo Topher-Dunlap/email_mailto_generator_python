@@ -16,10 +16,10 @@ with open(sys.argv[1]) as csv_list:
         number_of_days_int = int(number_of_days_string)
         
         if number_of_days_int < 20:
-            recipient = file_row[0] + "@knockinc.com"
+            recipient = file_row[0] + "@company_name.com"
             subject = 'Password Expires in ' + number_of_days_string
             subject = subject.replace(' ', '%20')
-            body = "this is the body of the e-mail. You have " + number_of_days_string + " do so now or face certain death."
+            body = "this is the body of the e-mail. You have " + number_of_days_string + " to change your password."
             body = body.replace(' ', '%20')
             webbrowser.open('mailto:?to=' + recipient + '&subject=' + subject + '&body=' + body, new=1)
 
