@@ -11,4 +11,6 @@ user.name	2019.10.04	102 days remaining
 user.name	2020.10.04	-2 days remaining
 `
 
+Each iteration of `user.name	YYYY.MM.DD	# days remaining` will need to have its own row.
+
 If in directory and if csv is in the same directory this can be executed using the following command. `python script.py list.csv`
